@@ -21,17 +21,15 @@ public class TestClassParameterizedTestMethodSource {
     @ParameterizedTest
     @MethodSource("stringIntListStreamProvider")
     public void methodMultipleArgumentsSourceTest(String strStrings, int iNumbers, List<String> lsStrStrings) {
-        StringBuilder strBuilOutput = new StringBuilder();
-        strBuilOutput.append("First string argument: ")
+        StringBuilder strBuildOutput = new StringBuilder();
+        strBuildOutput.append("First string argument: ")
                 .append(strStrings)
-                .append("\n")
-                .append("Second int argument: ")
+                .append("\nSecond int argument: ")
                 .append(iNumbers)
-                .append("\n")
-                .append("Third list argument size: ")
+                .append("\nThird list argument size: ")
                 .append(lsStrStrings.size())
                 .append("\n");
-        System.out.println(strBuilOutput);
+        System.out.println(strBuildOutput);
     }
 
     @ParameterizedTest
