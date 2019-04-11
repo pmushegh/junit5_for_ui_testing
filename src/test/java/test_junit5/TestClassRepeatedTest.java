@@ -12,4 +12,5 @@ public class TestClassRepeatedTest {
     public void someTest(TestInfo testInfo) {
         System.out.println(testInfo.getDisplayName());
     }
+
 }

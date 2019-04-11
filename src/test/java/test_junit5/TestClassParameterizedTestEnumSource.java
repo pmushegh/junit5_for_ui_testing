@@ -30,4 +30,5 @@ public class TestClassParameterizedTestEnumSource {
     public void customEnumSourceAllExceptRed(TestEnum testEnum) {
         System.out.printf(testEnum.toString());
     }
+
 }

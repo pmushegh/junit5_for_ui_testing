@@ -84,22 +84,19 @@
                 <configuration>
                     <includes>
                         <include>**/TestClass*.java</include>
+                        <!--<include>**/parallel/*.java</include>-->
                     </includes>
                     <properties>
                         <configurationParameters>
-                            junit.jupiter.conditions.deactivate = *
-                            junit.jupiter.extensions.autodetection.enabled = true
-                            junit.jupiter.testinstance.lifecycle.default = per_method
+                            junit.jupiter.conditions.deactivate = *
+                            junit.jupiter.extensions.autodetection.enabled = true
+                            junit.jupiter.testinstance.lifecycle.default = per_method
+                            <!--junit.jupiter.execution.parallel.enabled = true-->
+                            <!--junit.jupiter.execution.parallel.config.dynamic.factor = 2-->
+                            <!--junit.jupiter.execution.parallel.mode.default = concurrent-->
                         </configurationParameters>
                       </properties>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${junit.platform.surefire.provider}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>

@@ -27,4 +27,5 @@ public class TestClassNonStaticBeforeAfterAll {
     public void blankTest_2() {
         System.out.printf("Blank test 2.");
     }
+
 }
