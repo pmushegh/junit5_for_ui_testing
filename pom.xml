@@ -84,7 +84,8 @@
                 <configuration>
                     <includes>
                         <include>**/TestClass*.java</include>
-                        <!--<include>**/parallel/*.java</include>-->
+                        <!--<include>**/parallel/Pack*.java</include>-->
+                        <!--<include>**/parallel/Class.java</include>-->
                     </includes>
                     <properties>
                         <configurationParameters>
