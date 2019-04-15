@@ -82,6 +82,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
+                    <!--<groups>some0</groups>-->
+                    <!--<excludedGroups>some1</excludedGroups>-->
                     <includes>
                         <include>**/TestClass*.java</include>
                         <!--<include>**/parallel/Pack*.java</include>-->
